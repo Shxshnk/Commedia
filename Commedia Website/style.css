@@ -1,0 +1,691 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  overflow-x:hidden;
+  
+
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; /* Aligns header content to the left */
+  align-items: center;
+  padding: 8px 5px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  
+}
+
+.logo {
+  height: 50px;
+}
+nav ul li {
+  padding: 0px 2px; /* Adjusts vertical padding for each navigation item */
+  line-height: 1.5; /* Adjusts the height of the text */
+  font-size: 25px; /* Optional: Adjusts the font size */
+  cursor: pointer; /* Optional: Adds a pointer cursor on hover */
+ 
+
+}
+
+
+nav ul {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 320px; /* Moves the navigation menu slightly to the left */
+  white-space: nowrap; /* Prevents text wrapping */
+}
+
+nav ul img{
+  margin-left: -35px;
+}
+
+.verticals-section {
+  background-image: url('./Other_background_Images/Background_communication.svg');
+  background-size: cover;
+  background-position: center;
+  padding: 120px;
+  color: white;
+  text-align: left; /* Changed to align text to the left */
+  position: relative; /* Added to position child elements */
+}
+
+.verticals-heading {
+  position: absolute; /* Allows precise positioning */
+  bottom: 5px; /* Positions the content near the bottom */
+  left: 20px; /* Positions the content near the left */
+  text-align: left; /* Ensures the text aligns properly within the box */
+}
+
+.verticals-heading h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  background-color: transparent; /* Optional: Adds a background for contrast */
+  padding: 10px; /* Optional: Adds spacing inside the heading */
+  border-radius: 5px; /* Optional: Makes the background corners rounded */
+}
+
+@media (max-width: 768px) {
+  .verticals-heading h1 {
+    font-size: 36px; /* Adjusted for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .verticals-heading h1 {
+    font-size: 28px; /* Adjusted for mobile */
+  }
+}
+.services {
+  font-family: 'Inter', sans-serif;
+  font-size: 30px; /* Increases text size */
+  margin-left: 30px; /* Moves the block to the right */
+  margin-top: 90px;
+  line-height: 1.8; /* Adjusts line spacing */
+  font-weight: bolder;
+  
+}
+
+.services p {
+
+  margin: 10px 0; /* Adds spacing between each text line */
+}
+.vertical-line {
+  width: 2px; /* Thickness of the vertical line */
+  background-color: black; /* Line color */
+  height: 750px; /* Make it span full height */
+  margin-left: 340px;
+  margin-top: -280px;
+}
+
+.providers-img {
+    position: relative; /* Allows absolute positioning of child elements */
+    text-align: left;   /* Aligns text (if any) to the left */
+    margin-top: 50px;   /* Add some space above the image (optional) */
+}
+
+.left-image {
+    position: relative;  /* Positions the image within the section */
+    left: 1000px;          /* Moves the image slightly to the left */
+    top: -870px;
+    width: 350px;        /* You can adjust the image size as needed */
+
+    height: 350px;        /* Maintains aspect ratio */
+
+    object-fit: contain; /* Ensures the image scales properly without distortion */
+}
+
+@media (max-width: 768px) {
+    .left-image {
+        width: 200px; /* Adjust image size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .left-image {
+        width: 150px; /* Adjust image size for mobile */
+    }
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+  }
+
+  .vertical-line {
+    display: none; /* Hide line on smaller screens */
+  }
+
+ 
+}
+
+.logos-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.logos-container {
+  display: flex;
+  gap: 10px;
+}
+
+.arrow {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #1A1616; /* Dark background */
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around; /* Space sections evenly */
+  align-items: flex-start; /* Align content to the top */
+  flex-wrap: wrap; /* Adjust layout for smaller screens */
+  position: relative;
+  height: 300px; /* Set a fixed height */
+    overflow: hidden; /* Hide overflow content */
+
+}
+
+.footer-section {
+  text-align: left;
+  padding:5px;
+  margin: 5px;
+}
+
+/* About Us Section */
+.footer-section.about-us {
+  font-size: 14px;
+  line-height: 1.8;
+  width: 30%; /* Takes 30% of footer width */
+  color: #ABA7A7;
+  /* text-align: center; */
+}
+
+.footer-section.about-us h3 {
+  text-align: center;
+  color: #ABA7A7;
+}
+
+/* Headquarters Section */
+.footer-section.headquarters {
+  width: 30%; /* Takes 30% of footer width */
+  color: #ABA7A7; 
+}
+
+.footer-section.headquarters h3 {
+  color: #ABA7A7;
+  text-align: center;
+
+  
+}
+
+.footer-section.headquarters img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* Social Media Section */
+.footer-section.social-media {
+  text-align: center;
+  width: 10%; /* Takes 10% of footer width */
+}
+
+.footer-section.social-media img {
+  display: block; /* Each icon on a new line */
+  margin: 10px auto; /* Center align icons */
+  border: 2px solid transparent; /* Add borders to icons */
+}
+
+.footer-section.social-media img[alt="Facebook"] {
+  border: 0px solid white; /* Add white border specifically for Facebook */
+  border-radius: 0; /* Rounded border */
+}
+
+/* Footer Logo Section */
+.footer-logo-down{
+  display: block;
+  margin: 0 auto;
+   width: 250px; /*Adjust size as needed */
+  height: auto;
+  position: relative;
+  background-color: transparent;
+  left: -160px;
+  top: 10px;
+}
+
+/* Violet Box Above Footer */
+.footer-box {
+  background-color: #09334D; /* Violet color */
+  height: 40px; /* Adjust height as needed */
+  width: 100%; /* Full width */
+  
+  
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center align sections */
+  }
+
+  .footer-section {
+    width: 100%; /* Full width for smaller screens */
+    text-align: center; /* Center align text */
+  }
+}
+.social-icons img {
+  height: 40px;
+  margin-left: 10px;
+}
+
+.social-icons {
+  position: absolute; /* Allows precise positioning within the footer */
+  bottom: 120px; /* Distance from the bottom of the footer */
+  right: 20px; /* Distance from the right edge of the footer */
+  display: grid; /* Keeps icons in a horizontal row */
+  gap: 0px; /* Adds space between icons */
+}
+.footer-section.social-media img[alt="Twitter"]{
+  height: 45px;
+
+  
+}
+
+.para {
+  
+  margin: 20px auto; /* Center the content and add spacing */
+  max-width: 80%; /* Optional: Limit width for better readability */
+  position: relative; /* Relative positioning */
+  top: -900px; /* Adjust to align below the provider image */
+  left: 220px; /* Move slightly to the right */
+  font-size: larger;
+}
+
+.partners-section {
+  background-image: url('./AllPartners_logo/Partners_Header.png');
+  background-size: cover;
+  background-position: center;
+  padding: 120px;
+  color: white;
+  text-align: left; /* Changed to align text to the left */
+  position: relative; /* Added to position child elements */
+}
+
+.partners-heading {
+  position: absolute; /* Allows precise positioning */
+  bottom: 5px; /* Positions the content near the bottom */
+  left: 20px; /* Positions the content near the left */
+  text-align: left; /* Ensures the text aligns properly within the box */
+}
+
+.partners-heading h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  background-color: transparent; /* Optional: Adds a background for contrast */
+  padding: 10px; /* Optional: Adds spacing inside the heading */
+  border-radius: 5px; /* Optional: Makes the background corners rounded */
+}
+
+@media (max-width: 768px) {
+  .partners-heading h1 {
+    font-size: 36px; /* Adjusted for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-heading h1 {
+    font-size: 28px; /* Adjusted for mobile */
+  }
+}
+
+.digital-enterprises{
+  
+  margin-left: 570px;
+  font-size: 30px;
+  font-weight: 1000; 
+}
+
+.logos-section{
+  margin-top: -100px;
+}
+
+.vertical-line-Produts{
+  width: 2px; /* Thickness of the vertical line */
+  background-color: black; /* Line color */
+  height: 750px; /* Make it span full height */
+  margin-left: 340px;
+  margin-top: 80px;
+
+
+}
+
+.products-section {
+  background-image: url('./Products/products.png');
+  background-size: cover;
+  background-position: center;
+  padding: 120px;
+  color: white;
+  text-align: left; /* Changed to align text to the left */
+  position: relative; /* Added to position child elements */
+}
+
+.products-heading {
+  position: absolute; /* Allows precise positioning */
+  bottom: 5px; /* Positions the content near the bottom */
+  left: 20px; /* Positions the content near the left */
+  text-align: left; /* Ensures the text aligns properly within the box */
+}
+
+.products-heading h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  background-color: transparent; /* Optional: Adds a background for contrast */
+  padding: 10px; /* Optional: Adds spacing inside the heading */
+  border-radius: 5px; /* Optional: Makes the background corners rounded */
+}
+
+@media (max-width: 768px) {
+  .products-heading h1 {
+    font-size: 36px; /* Adjusted for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .products-heading h1 {
+    font-size: 28px; /* Adjusted for mobile */
+  }
+}
+
+/* Dropdown Container */
+nav ul li.dropdown {
+  position: relative;
+  display: inline-block;
+  
+  
+   
+
+
+}
+
+/* Dropdown Content */
+nav ul li.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 215px;
+  top: 100%; /* Positions the dropdown below the 'About Us' menu item */
+  left: -80px;
+  border-radius: 0.5em;
+}
+
+/* Links inside the dropdown */
+nav ul li.dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 0.5em;
+}
+
+/* Hover effect for dropdown links */
+nav ul li.dropdown .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show dropdown on hover */
+nav ul li.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Optionally, you can style the About Us link */
+nav ul li.dropdown a {
+  cursor: pointer;
+}
+
+.About-section {
+  background-image: url('./About-Us/Vision&Partners.png');
+  background-size: cover;
+  background-position: center;
+  padding: 120px;
+  color: white;
+  text-align: left; /* Changed to align text to the left */
+  position: relative; /* Added to position child elements */
+}
+
+.About-heading {
+  position: absolute; /* Allows precise positioning */
+  bottom: 5px; /* Positions the content near the bottom */
+  left: 20px; /* Positions the content near the left */
+  text-align: left; /* Ensures the text aligns properly within the box */
+}
+
+.About-heading h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  background-color: transparent; /* Optional: Adds a background for contrast */
+  padding: 10px; /* Optional: Adds spacing inside the heading */
+  border-radius: 5px; /* Optional: Makes the background corners rounded */
+}
+
+@media (max-width: 768px) {
+  .About-heading h1 {
+    font-size: 36px; /* Adjusted for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .About-heading h1 {
+    font-size: 28px; /* Adjusted for mobile */
+  }
+}
+
+.About-vision-section {
+  background-image: url('./About-Us/Vision&Partners.png');
+  background-size: cover;
+  background-position: center;
+  padding: 120px;
+  color: white;
+  text-align: left; /* Changed to align text to the left */
+  position: relative; /* Added to position child elements */
+}
+
+.About-vision-heading {
+  position: absolute; /* Allows precise positioning */
+  bottom: 5px; /* Positions the content near the bottom */
+  left: 20px; /* Positions the content near the left */
+  text-align: left; /* Ensures the text aligns properly within the box */
+}
+
+.About-vision-heading h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  background-color: transparent; /* Optional: Adds a background for contrast */
+  padding: 10px; /* Optional: Adds spacing inside the heading */
+  border-radius: 5px; /* Optional: Makes the background corners rounded */
+}
+
+@media (max-width: 768px) {
+  .About-vision-heading h1 {
+    font-size: 36px; /* Adjusted for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .About-vision-heading h1 {
+    font-size: 28px; /* Adjusted for mobile */
+  }
+}
+.About-mission-section {
+  background-image: url('./About-Us/Vision&Partners.png');
+  background-size: cover;
+  background-position: center;
+  padding: 120px;
+  color: white;
+  text-align: left; /* Changed to align text to the left */
+  position: relative; /* Added to position child elements */
+}
+
+.About-mission-heading {
+  position: absolute; /* Allows precise positioning */
+  bottom: 5px; /* Positions the content near the bottom */
+  left: 20px; /* Positions the content near the left */
+  text-align: left; /* Ensures the text aligns properly within the box */
+}
+
+.About-mission-heading h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  background-color: transparent; /* Optional: Adds a background for contrast */
+  padding: 10px; /* Optional: Adds spacing inside the heading */
+  border-radius: 5px; /* Optional: Makes the background corners rounded */
+}
+
+@media (max-width: 768px) {
+  .About-mission-heading h1 {
+    font-size: 36px; /* Adjusted for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .About-mission-heading h1 {
+    font-size: 28px; /* Adjusted for mobile */
+  }
+}
+.providers-img {
+  overflow: visible; /* Ensures the image is not cut off */
+  display: flex; /* Helps in aligning the image if needed */
+  justify-content: flex-start; /* Aligns the image to the left */
+}
+.providers-img .left-image {
+  width: 550px; /* Adjust to your desired size */
+  height: auto; /* Maintains aspect ratio */
+  margin-left: -210px; /* Moves the image to the right */
+  margin-top: 60px;
+}
+
+.Leadership-section {
+  background-image: url('./About-Us/Leadership.png');
+  background-size: cover;
+  background-position: center;
+  padding: 120px;
+  color: white;
+  text-align: left; /* Changed to align text to the left */
+  position: relative; /* Added to position child elements */
+}
+
+.Leadership-heading {
+  position: absolute; /* Allows precise positioning */
+  bottom: 5px; /* Positions the content near the bottom */
+  left: 20px; /* Positions the content near the left */
+  text-align: left; /* Ensures the text aligns properly within the box */
+}
+
+.Leadership-heading h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  background-color: transparent; /* Optional: Adds a background for contrast */
+  padding: 10px; /* Optional: Adds spacing inside the heading */
+  border-radius: 5px; /* Optional: Makes the background corners rounded */
+}
+
+@media (max-width: 768px) {
+  .Leadership-heading h1 {
+    font-size: 36px; /* Adjusted for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .Leadership-heading h1 {
+    font-size: 28px; /* Adjusted for mobile */
+  }
+}
+
+.carrers-section {
+  background-image: url('./About-Us/Careers.png');
+  background-size: cover;
+  background-position: center;
+  padding: 120px;
+  color: white;
+  text-align: left; /* Changed to align text to the left */
+  position: relative; /* Added to position child elements */
+}
+
+.carrers-heading {
+  position: absolute; /* Allows precise positioning */
+  bottom: 5px; /* Positions the content near the bottom */
+  left: 20px; /* Positions the content near the left */
+  text-align: left; /* Ensures the text aligns properly within the box */
+}
+
+.carrers-heading h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  background-color: transparent; /* Optional: Adds a background for contrast */
+  padding: 10px; /* Optional: Adds spacing inside the heading */
+  border-radius: 5px; /* Optional: Makes the background corners rounded */
+}
+
+@media (max-width: 768px) {
+  .carrers-heading h1 {
+    font-size: 36px; /* Adjusted for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .carrers-heading h1 {
+    font-size: 28px; /* Adjusted for mobile */
+  }
+}
+.providers-img-2 {
+  overflow: visible; /* Ensures the image is not cut off */
+  display: flex; /* Helps in aligning the image if needed */
+  justify-content: flex-start; /* Aligns the image to the left */
+}
+.providers-img-2 .left-image-2 {
+  width: 450px; /* Adjust to your desired size */
+  height: auto; /* Maintains aspect ratio */
+  margin-left: 70%; /* Moves the image to the right */
+  margin-top: -200px;
+}
+
+.main-content{
+
+  margin-left: 30px;
+  margin-top: 50px;
+
+}
+
+.cv input{
+  width: 300px;
+  height:40px;
+  border-radius: 10px;
+  background-color: #CBCBCB;
+  padding: 0 20px;
+  border:0;
+  font-size: larger;
+}
+
+.cv p{
+  margin-left: 370px;
+
+}
+.cv button {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  
+
+}
+.cv button{
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  
+
+}
+.cv button.send {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #09334C, #1577B2); /* Light blue color */
+  color: white;
+  border: none;
+  font-size: larger;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
